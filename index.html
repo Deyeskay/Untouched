@@ -9,28 +9,6 @@
   <meta name="googlebot" content="noindex, nofollow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
  
-  <style>
-/* hide default blogger iframe */
-  #navbar-iframe-container {
-      display:none;
-    }
-</style> 
-  
- 
- <style type="text/css">
-body {
-   margin: 0;
-   overflow: hidden;
-}
-#iframe1 {
-    position:absolute;
-    left: 0px;
-    width: 100%;
-    top: 0px;
-    height: 100%;
-}
-</style> 
-  
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-D8B7VXYX9Q"></script>
 <script>
@@ -41,38 +19,653 @@ body {
   gtag('config', 'G-D8B7VXYX9Q');
 </script>
   
-<link rel="me" href="https://www.blogger.com/profile/04606233735995502069" />
-<meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
-<meta name='google-adsense-platform-domain' content='blogspot.com'/>
-<!-- --><style type="text/css">@import url(https://www.blogger.com/static/v1/v-css/navbar/3334278262-classic.css);
-div.b-mobile {display:none;}
-</style>
-
-</head>
-
-  <body><script type="text/javascript">
-    function setAttributeOnload(object, attribute, val) {
-      if(window.addEventListener) {
-        window.addEventListener('load',
-          function(){ object[attribute] = val; }, false);
-      } else {
-        window.attachEvent('onload', function(){ object[attribute] = val; });
+ 
+  <style>
+  .modal-dialog { 
+    top: 60px;
+  }
+  .modal-content {
+    color: #ddd; 
+    background-color: #222;
+    border: 2px solid #ffb320;
+    box-shadow: 0 3px 9px rgb(245 249 0 / 50%);
+  }
+      #donate {
+    cursor:pointer;
+    color:black;
+    background: #ffb320;
+    border-radius: 22px;
       }
-    }
-  </script>
-<div id="navbar-iframe-container"></div>
-<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-<script type="text/javascript">
-      gapi.load("gapi.iframes:gapi.iframes.style.bubble", function() {
-        if (gapi.iframes && gapi.iframes.getContext) {
-          gapi.iframes.getContext().openChild({
-              url: 'https://www.blogger.com/navbar.g?targetBlogID\x3d5695318938944179555\x26blogName\x3dUntouched+The+Game\x26publishMode\x3dPUBLISH_MODE_BLOGSPOT\x26navbarType\x3dBLUE\x26layoutType\x3dCLASSIC\x26searchRoot\x3dhttps://untouchedgame.blogspot.com/search\x26blogLocale\x3den_GB\x26v\x3d2\x26homepageUrl\x3dhttp://untouchedgame.blogspot.com/\x26vt\x3d-7714608609196241801',
-              where: document.getElementById("navbar-iframe-container"),
-              id: "navbar-iframe"
-          });
+      #donate a {
+          color:black;
+      }
+      #not-allowed{
+          background: #6e6e6e;
+    color: #e7e7e7;
+    cursor: not-allowed;
+    border-radius: 22px;
+      }
+      
+        .m_view { display:none !important; }
+        .d_view { display:block;}
+    @media only screen and (max-width: 768px) {
+        .d_view { display:none !important; }
+        .m_view { display:block !important;}
+        
+        .badge.new {     position: absolute;    top: -49px;    }
         }
+    @media only screen and (max-width: 450px) {
+        .hero-marketing-text {   
+            top:140px !important;
+            } 
+    }
+  </style>
+   
+  
+  <style>
+  .navbar-nav>li {
+      cursor:pointer;
+  }
+  .navbar-inverse {
+        background: linear-gradient(to bottom, #000000 0%, #343434 100%);
+    padding: 20px 0;
+    border-bottom: 4px solid #FFB320;
+}
+.hero-marketing-text span {
+    color: #FFB320;
+    -webkit-text-stroke: 0.25px black;
+}
+.hero-marketing-text h1 {
+    color: #eee;
+    font-size: 3.5em;
+    font-weight: 300;
+    margin: 0.5em 0;
+}
+   #hero-image {
+    background: url(images/cover2.jpg) right no-repeat;
+    background-size: cover;
+    height: 590px;
+	margin-top: 70px; 
+   }
+  .hero-marketing-text {
+    max-width: 1200px;
+    margin: -30px auto 0;
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+	}
+  .hero-marketing-text h4 {
+  color: black;padding: 21px;
+  font-weight: 500;
+  background: #ffffffa6;
+  font-size:14px;
+  max-width: 500px;
+  line-height: 1.5;
+  margin-bottom: 2.5em;
+  }
+  #latest-news {
+    margin-bottom: 65px;
+}
+.latest-news-container{
+    padding: 0;
+}
+.latest-news-container h5{
+background-color: #FFB320;
+    padding: 25px;
+    margin: 0;
+    text-align: center;
+    color: #eee;
+    font-size: 1.2em;
+    }
+ .latest-news-container2 {   
+    background-color: #131313;
+    position: relative;
+    padding: 20px;
+ }
+ #latest-news-container .latest-news-text {
+    color: #eee;
+}
+#latest-news-container .badge {
+    margin-right: 20px;
+}
+.badge.new {
+    background-color: #FF205F;
+}
+.badge {
+    padding: 9px 20px;
+    color: #eee;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    font-size: 0.75em;
+}
+  </style>
+  
+  
+  
+  
+</head> 
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<!-- floating --> 
+<style>
+.float-icon-bar {
+    position: fixed;
+    z-index: 99;
+    right: 15px;
+    bottom: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.float-icon-bar .fab{
+    font-size: 20px;color: white;
+}
+.float-icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 16px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 15px;
+    border-radius: 30px;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.float-icon-bar a:hover {
+  background-color: #000;
+}
+.google {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+ 
+
+.youtube {
+  background: #be2225;
+  color: white;
+} 
+</style>
+<div class="float-icon-bar">
+  <a href="mailto:sashikiran.dindi@gmail.com" class="google"><i class="fab fa-google"></i></a> 
+  <a target="_blank" href="https://twitter.com/D_Yeskay" class="twitter"><i class="fab fa-twitter"></i></a>   
+  <a target="_blank" href="https://www.youtube.com/channel/UCpOdubE4kKSNpYZR6H5UF2Q?sub_confirmation=1" class="youtube"><i class="fab fa-youtube"></i></a> 
+</div>
+<!-- //floating -->
+
+
+
+  <!-- Modal -->
+  <style>
+ .modal-title {
+    font-weight: bold;
+      }
+  </style>
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4 class="modal-title">YouTube Gamers Challenge - #WhoIsSherlock Contest</h4>
+        </div>
+        <div class="modal-body">
+          <p><i class="fas fa-hand-point-right"></i> Contest has a time frame</p>
+          <p><i class="fas fa-hand-point-right"></i> Enrol into contest with your mail id. Registrations close after enough players enrol.</p>
+          <p><i class="fas fa-hand-point-right"></i> All registrants will be notified 2 days prior to contest</p>
+          <p><i class="fas fa-hand-point-right"></i> Download link will be available  to registered players @6:00 AM on the day of contest  </p>
+          <p><i class="fas fa-hand-point-right"></i> Players have to Download Zip file, extract  it then install it </p>
+          <p><i class="fas fa-hand-point-right"></i> Players have to maintain a proof of entire gameplay, We require it to verify gameplay legitimacy</p>
+          <p><i class="fas fa-hand-point-right"></i> We Highly recommend  to stream gameplay(along with your Channel's watermark) in YouTube.<br>
+          (It is completely fair for youtubers to ask their subscribers for help/guidance  to progress in their game.) </p>
+          
+          <p><i class="fas fa-hand-point-right"></i> First to mail the Legitimate End Game Screenshot along with  their YouTube gameplay link will be declared as winner <br><br>
+          *Your gameplay footage will be verified and also in order to prevent misuse of other players footage, ownership will be questioned</p>
+           
+          
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal" style="font-weight: bold;">Thank You. Good Luck!</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+   <!-- //Modal --> 
+
+
+
+  <!-- Modal2 -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+          <h4 class="modal-title">Uncharted The Ancient Code - YouTube Gamers Challenge</h4>
+        </div>
+        <div class="modal-body">
+         
+        <p>Game Mode Status: Pending ( Normal / Contest  ) </p>
+        <p>Registrations will be open once Game mode gets finilized based on enough voting</p> <br>
+          <a target="_blank" href="https://forms.gle/t76FaLTjQEvdJK2z7" style="padding: 5px 12px;" id="donate">Vote Now</a>
+          <a style="padding: 5px 12px;float:right" id="not-allowed">Registrations Unavailable </a>
+           
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+   <!-- //Modal2 --> 
+   
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+ <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <img src="images/logo.png" style="height: 50px;margin-left: 10px;">
+    </div>
+  <div class="collapse navbar-collapse text-center" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li class=""><a href="#tournaments">GAMES</a></li>
+        <li><a data-toggle="modal" data-target="#myModal2">REGISTER</a></li>  
+        <li id="donate"><a target="_blank" href="https://www.paypal.me/dyeskay">DONATE</a></li>
+    </ul>
+  </div>  
+    </div>  
+</nav>
+<br>
+
+
+
+
+<section id="hero-image">
+    <div class="m_view" style="background: #000000ba;width: 100%;height: 100%;">  </div>
+    
+                <div class="hero-marketing-text">
+                    <h1 style="-webkit-text-stroke: 0.75px black;"><span>Untouched Forbidden Ruins</span> PC Game</h1>
+                    <h4> Untouched is an action-adventure game. Forbidden Ruins is first in the series developed by Yeskay for Windows. The main series of games follows Gray Hunt, an archaeology professor who discovers hidden secret gates in the world and travels across to uncover various historical mysteries. </h4><button id="donate"><a href="https://www.indiedb.com/games/untouched-the-forbidden-ruins/downloads/untoched-forbidden-ruins" target="_blank"> Download </a></button>
+                </div>
+ 
+</section>
+
+<section id="latest-news">
+                <div class="latest-news-container col-sm-3">
+                    <h5>Latest News</h5>
+					</div>
+                    <div id="latest-news-container" class="latest-news-container2 col-sm-9">
+                        <div class="latest-news-item">
+                            <span class="badge new">New</span>
+                            <span class="latest-news-text">Untouched The Forbidden Ruins is now available for download</span>
+                        </div>
+                    </div>
+                
+</section>			
+			
+
+<style>
+    #recent-games {
+    background: url(images/recent_games_bg1.png) top center no-repeat;
+    background-color: #eef2f6;
+    border-top: 1px solid #d6dee7;
+    border-bottom: 1px solid #d6dee7;
+    padding: 70px 0 120px;
+}
+#recent-games .box {
+    position: relative;
+    flex-basis: 31%;
+    background-color: #fff;
+}
+#recent-games .box .badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+#recent-games .box .box-lower-section {
+    padding: 20px;
+}
+.badge.racing {
+    background-color: #694EAE;
+}
+.badge.rpg, .badge.adventure {
+    background-color: #40ABF5;
+}
+</style>			
+<section id="recent-games">
+                <h2 style="font-weight:bold" class="text-center">Genere</h2>
+       <div class="container">          
+       <div class="row">
+               <div class="col-sm-4">     
+               <div class="box">
+                        <span class="badge new">RPG</span>
+                        <img class="img-responsive" src="images/rpg.jpg" style="width:100%">
+                        <div class="box-lower-section">
+                            <h4><b>Feel The Untouched World</b></h4>
+                            <p>You control the actions of a character immersed in some well-defined world.</p> 
+                        </div>
+                    </div> 
+                    </div>
+
+               <div class="col-sm-4">     
+               <div class="box">
+                        <span class="badge racing">Puzzle Solving</span>
+                        <img class="img-responsive" src="images/puzzle.jpg" style="width:100%">
+                        <div class="box-lower-section">
+                            <h4><b>Brain It On</b></h4>
+                            <p>Solving a puzzle will unlock access to new areas in the game world.</p> 
+                        </div>
+                    </div> 
+                    </div>
+
+               <div class="col-sm-4">     
+               <div class="box">
+                        <span class="badge adventure">Adventure</span>
+                        <img class="img-responsive" src="images/adventure.jpg">
+                        <div class="box-lower-section">
+                            <h4><b>Take A Tour</b></h4>
+                            <p>Explore Untouched fictional locations that have deep mythological roots</p> 
+                        </div>
+                    </div> 
+                    </div>
+                </div>  
+                </div>
+            </section>
+            
+
+<style>
+#tournaments {
+    background: url(https://onclickwebdesign.com/wp-content/uploads/footer_bg_pattern.png) 0 0 repeat;
+    padding: 125px 0 105px;
+}
+
+.badge.tournaments {
+    background-color: #FB6E10;
+}
+#tournaments .badge.tournaments {
+    top: -32px;
+    left: 15px;
+} 
+#tournaments .box {
+    margin-bottom: 20px;
+    background-color: #252525;
+    padding: 70px 20px 40px; 
+    position: relative;
+}
+#tournaments .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+.badge.premium-tournament {
+    background-color: #FFB320;
+    color: #252525;
+}
+ 
+#tournaments .box .tournaments-image img {
+    width: 100%;margin-bottom: 20px;
+}
+#tournaments .box .tournaments-content h3 {
+    color: #FFB320;
+    margin-top: 0;
+}
+#tournaments .box .tournaments-content label {
+    color: #999;
+    font-size: 0.75em;
+}
+#tournaments .box .tournaments-content strong {
+    color: #eee;
+    font-size: 0.75em;
+}
+#tournaments .box .tournaments-content label.prizes {
+    color: #FFB320;
+    display: inline-block;
+    margin-top: 12px;
+}
+</style>            
+<section id="tournaments">
+      <div class="container">           
+      <div class="row">
+                    <span class="badge tournaments">Tournaments</span>
+                    
+ <div class="col-sm-4"> 
+ <div class="box"> <div class="row">
+                        <span class="badge premium-tournament">Out Now</span>
+                        <div class="tournaments-image col-xs-6 col-sm-12">
+                            <img src="images/fr.jpg">
+                        </div>
+                        <div class="tournaments-content col-sm-9">
+                            <h3>FORBIDDEN RUINS</h3>
+                            <div><label>Game Type:</label> <strong>Demo</strong></div>
+                            <div><label>No. of Levels:</label> <strong>One (1)</strong></div>
+                            <div><label>Release Date:</label> <strong>June 20, 2019</strong></div>
+                            <div><label>Operating System:</label> <strong>Windows</strong></div>
+                            <div><label>Minimum Requirements:</label> <strong>10 teams</strong></div> 
+                             
+                        </div>
+                    </div> 
+                    </div> </div> 
+
+ <div class="col-sm-4"> 
+ <div class="box "> <div class="row">
+                        <span class="badge premium-tournament">Open for Voting</span>
+                        <div class="tournaments-image  col-xs-6 col-sm-12">
+                            <img src="images/ac.jpg">
+                        </div>
+                        <div class="tournaments-content  col-sm-9">
+                            <h3>ANCIENT CODE</h3>
+                            <div><label>Game Type:</label> <strong>Full version</strong></div>
+                            <div><label>No. of Levels:</label> <strong> Five (5)</strong></div>
+                            <div><label>Operating System:</label> <strong> Windows</strong></div> 
+                            <div><label class="prizes">Game Mode: (Normal/Contest)</label> <label>Depends on Majority of User Votes</label></div>
+                            <div style="padding-top: 16px;">
+                                <a target="_blank" href="https://forms.gle/t76FaLTjQEvdJK2z7" id="donate" style="cursor:pointer;padding: 5px 12px;color: black;">Vote Now</a>
+                                </div>
+                        </div>
+                    </div> 
+                    </div> </div> 
+   <div class="col-sm-4"> 
+ <div class="box "> <div class="row">
+                        <span class="badge premium-tournament">WIP</span>
+                        <div class="tournaments-image  col-xs-6 col-sm-12">
+                            <img src="images/wrt.jpg">
+                        </div>
+                        <div class="tournaments-content  col-sm-9">
+                            <h3>THE GREAT RESET</h3>
+                            <div><label>Game Type:</label> <strong>Full version</strong></div>
+                            <div><label>No. of Levels:</label> <strong> TBA</strong></div>
+                            <div><label>Release Date:</label> <strong>TBA</strong></div>
+                            <div><label>Operating System:</label> <strong> TBA</strong></div>
+                        </div>
+                    </div> 
+                    </div> </div>                   
+                    
+                </div>   
+                </div>
+            </section>            
+            
+            
+            
+<style>
+    #ancientcode {
+        padding: 70px 0 120px;
+    }
+    .h2-heading {
+         text-transform: capitalize;
+    text-align: center;
+    font-weight: bold;
+    color: #bd6100;
+}
+    .contest p {
+        color: #f3f3f3;
+    }
+    .contest {
+        padding: 45px 20px 0px 20px
+    }
+</style>            
+			 
+  
+  <section style="background: radial-gradient(#3a3a3a, #1c1c1c);" id="ancientcode">
+      <div class="container">
+      
+<div class="wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.5s">
+  <h2 style="font-weight:bold;color: #f3f3f3;" class="text-center">The Ancient Code</h2>  
+  <div class="row">
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="images/Screenshot_2.jpg" target="_blank">
+          <img src="images/Screenshot_2.jpg" alt="Lights" style="width:100%">
+         
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="images/Screenshot_1.jpg" target="_blank">
+          <img src="images/Screenshot_1.jpg" alt="Nature" style="width:100%">
+         
+        </a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="images/Screenshot_50.jpg" target="_blank">
+          <img src="images/Screenshot_50.jpg" alt="Fjords" style="width:100%">
+        
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row text-center contest">
+    <h3 class="h2-heading">This is one of the hardest Mystery puzzle solving games ever made. </h3>
+    
+    <p>No matter How good you are at Gaming, This Game will put your skills to Real Test</p>
+    <h3 style="color:#ff2020">Real Challenge Awaits!</h3>
+    <hr>
+    <h3 class="h2-heading"> YouTube Gamers Challenge  -  #WhoIsSherlock Contest!</h3>
+    <p>Invite your friends to the challenge.  <br> <br>
+    First Player to Find the way and Completes the Game wins the contest.</p>
+    
+    <div style="padding-top: 16px;">
+ <a data-toggle="modal" data-target="#myModal" id="donate" style="cursor:pointer;padding: 5px 12px;color: black;">How It Works</a>
+ </div>
+    
+</div>
+
+
+</div>
+</section>
+ 
+ 
+
+<style>
+    footer {
+    background-color: #252525;
+    padding: 25px 0 20px;
+}
+footer p {
+    text-align:center;
+    float:left;
+    color: white;
+}
+footer ul {
+    float:right;
+    list-style-type: none;
+    margin: 0;
+}
+footer ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+footer ul li a {    
+    color: #FFB320;
+}
+@media only screen and (max-width: 600px) {
+    footer p { float:unset; }
+    footer ul { display:none;}
+}
+</style>
+<footer>
+            <div class="container">
+                <p>Copyright © 2020 All rights reserved  </p>
+                <ul> 
+
+                    <li>
+                        <a href="#tournaments">Games</a>
+                    </li>
+
+                    <li>
+                        <a href="mailto:sashikiran.dindi@gmail.com">Gmail</a>
+                    </li>
+
+                    <li>
+                        <a href="https://twitter.com/D_Yeskay">Twitter </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCpOdubE4kKSNpYZR6H5UF2Q?sub_confirmation=1">YouTube</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+
+
+<!-- Start Nav menu link smooth scroll -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
       });
-    </script>  
-    <iframe id="iframe1" src="http://untouched.smrcweb.com/" frameborder="0"  allowfullscreen></iframe> 
-</body>
-</html>
+    } // End if
+	
+	
+	
+	 // Using jQuery to auto collapse navbar in mobile screens
+    $('.navbar-collapse').collapse('hide'); 
+	
+	
+  });    
+})  
+</script>
+
+
+
+
+</body></html>
